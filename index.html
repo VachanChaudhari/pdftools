@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iLovePDF - Online PDF tools for PDF lovers</title>
+  <meta name="description" content="Every tool you need to work with PDFs in one place. Merge PDF, split PDF, compress PDF, convert to Word, Excel, PowerPoint and more — free and easy to use." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e5322d'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3E%26lt;3%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="iLovePDF home">
+        <span class="logo-icon">PDF</span>
+        <span class="logo-text">iLove<span class="logo-red">PDF</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#organize" class="nav-link">Merge PDF</a>
+        <a href="#tools" class="nav-link">All PDF tools</a>
+        <div class="nav-divider"></div>
+        <a href="#" class="nav-link muted">Pricing</a>
+        <a href="#" class="nav-link muted">Sejda</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="loginBtn">Log in</button>
+        <button class="btn btn-primary" id="signupBtn">Sign up</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <h1>Every tool you need to work with PDFs.<br /><span class="hero-sub">All in one place.</span></h1>
+      <p class="hero-lead">Free, easy and online. Every tool you need to use PDFs, at your fingertips.</p>
+      <a href="#tools" class="btn btn-primary btn-lg">Start now — it's free</a>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS ============ -->
+  <main class="container tools-section" id="tools">
+
+    <!-- Organize -->
+    <div class="tool-block" id="organize">
+      <h2 class="block-title">Organize PDF</h2>
+      <div class="tool-grid">
+        <button class="tool-card" data-tool="merge">
+          <span class="tool-icon" style="background:#fbdcce;color:#e74a3b"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M19 3h-4v2h2v6l-4 3-4-3V5h2V3H7v2h1v6.5l-3 2.25V7H3v2h1v4.5L3 15v6h6v-6l-1-.75V19H5v-2h2v2h2v-2h2v2h2v-2h2v2h2v-5l-1-.75V13h1v-2h-1V8h1V3z"/></svg></span>
+          <span class="tool-name">Merge PDF</span>
+          <span class="tool-desc">Combine PDFs in the order you want.</span>
+        </button>
+        <button class="tool-card" data-tool="split">
+          <span class="tool-icon" style="background:#fce6f3;color:#d6336c"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M9 2v6H3v8h6v6h6v-6h6V8h-6V2H9zm2 2h2v6h4v4h-4v6h-2v-6H7v-4h4V4z"/></svg></span>
+          <span class="tool-name">Split PDF</span>
+          <span class="tool-desc">Separate one page or a whole set.</span>
+        </button>
+        <button class="tool-card" data-tool="organize">
+          <span class="tool-icon" style="background:#e3faf3;color:#0ca678"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg></span>
+          <span class="tool-name">Organize PDF</span>
+          <span class="tool-desc">Sort pages, delete & rotate.</span>
+        </button>
+        <button class="tool-card" data-tool="rotate">
+          <span class="tool-icon" style="background:#fff4d6;color:#f59f00"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M12 4V1L8 5l4 4V6a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg></span>
+          <span class="tool-name">Rotate PDF</span>
+          <span class="tool-desc">Rotate pages of a PDF file.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Optimize -->
+    <div class="tool-block">
+      <h2 class="block-title">Optimize</h2>
+      <div class="tool-grid">
+        <button class="tool-card" data-tool="compress">
+          <span class="tool-icon" style="background:#dbe4ff;color:#3b5bdb"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M4 9h4V3h8v6h4l-8 8-8-8zm0 11v-2h16v2H4z"/></svg></span>
+          <span class="tool-name">Compress PDF</span>
+          <span class="tool-desc">Reduce file size while optimizing quality.</span>
+        </button>
+        <button class="tool-card" data-tool="repair">
+          <span class="tool-icon" style="background:#e7f5ff;color:#1971c2"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M22 9V7h-3V5c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v2H2v2h3v8c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V9h3zM7 5h10v4H7V5z"/></svg></span>
+          <span class="tool-name">PDF Repair</span>
+          <span class="tool-desc">Repair a damaged PDF file.</span>
+        </button>
+        <button class="tool-card" data-tool="ocr">
+          <span class="tool-icon" style="background:#f3f0ff;color:#7048e8"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M3 4h18v3h-2V6H5v12h14v-1h2v3H3V4zm6 8H7v-2h2v-2h2v2h2v2h-2v2H9v-2zm8 0h-2v-2h2v2z"/></svg></span>
+          <span class="tool-name">OCR PDF</span>
+          <span class="tool-desc">Convert scanned pages to text.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Convert to PDF -->
+    <div class="tool-block">
+      <h2 class="block-title">Convert to PDF</h2>
+      <div class="tool-grid">
+        <button class="tool-card" data-tool="jpg-to-pdf">
+          <span class="tool-icon" style="background:#fff0f6;color:#c2255c"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"/></svg></span>
+          <span class="tool-name">JPG to PDF</span>
+          <span class="tool-desc">Convert JPG, PNG to PDF.</span>
+        </button>
+        <button class="tool-card" data-tool="word-to-pdf">
+          <span class="tool-icon" style="background:#e7f5ff;color:#1c7ed6"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M6 2h8l6 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13l1.5 7 1.5-5 1.5 5L14 13"/></svg></span>
+          <span class="tool-name">Word to PDF</span>
+          <span class="tool-desc">Convert DOC / DOCX to PDF.</span>
+        </button>
+        <button class="tool-card" data-tool="powerpoint-to-pdf">
+          <span class="tool-icon" style="background:#fff4e6;color:#e8590c"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M6 2h8l6 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM9 13v6h1.2v-2.1h1c1.3 0 2.3-.8 2.3-2s-1-1.9-2.3-1.9H9zm1.2 2.8v-1.8h.9c.6 0 1 .3 1 .9s-.4.9-1 .9h-.9z"/></svg></span>
+          <span class="tool-name">PowerPoint to PDF</span>
+          <span class="tool-desc">Convert PPT to PDF.</span>
+        </button>
+        <button class="tool-card" data-tool="excel-to-pdf">
+          <span class="tool-icon" style="background:#ebfbee;color:#2f9e44"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M6 2h8l6 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM9 13l3 9 3-9"/></svg></span>
+          <span class="tool-name">Excel to PDF</span>
+          <span class="tool-desc">Convert XLS to PDF.</span>
+        </button>
+        <button class="tool-card" data-tool="html-to-pdf">
+          <span class="tool-icon" style="background:#e9ecef;color:#495057"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M3 3h18v18H3V3zm6.5 14L8 9l1.5-.2 1 5 1.5-5.8H13l-2 9.5-1.5-1zm6-1l-.3-2 2.3-.2.3 2-2.3.2z"/></svg></span>
+          <span class="tool-name">HTML to PDF</span>
+          <span class="tool-desc">Convert web pages to PDF.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Convert from PDF -->
+    <div class="tool-block">
+      <h2 class="block-title">Convert from PDF</h2>
+      <div class="tool-grid">
+        <button class="tool-card" data-tool="pdf-to-jpg">
+          <span class="tool-icon" style="background:#fff0f6;color:#c2255c"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-4 13l-2 2.5V11h8v9H9l1-5z"/></svg></span>
+          <span class="tool-name">PDF to JPG</span>
+          <span class="tool-desc">Convert each PDF page to an image.</span>
+        </button>
+        <button class="tool-card" data-tool="pdf-to-word">
+          <span class="tool-icon" style="background:#e7f5ff;color:#1c7ed6"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 7V3.5L19.5 9H14z"/></svg></span>
+          <span class="tool-name">PDF to Word</span>
+          <span class="tool-desc">Convert a PDF to an editable DOC.</span>
+        </button>
+        <button class="tool-card" data-tool="pdf-to-powerpoint">
+          <span class="tool-icon" style="background:#fff4e6;color:#e8590c"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 7V3.5L19.5 9H14z"/></svg></span>
+          <span class="tool-name">PDF to PowerPoint</span>
+          <span class="tool-desc">Convert PDF to PPT.</span>
+        </button>
+        <button class="tool-card" data-tool="pdf-to-excel">
+          <span class="tool-icon" style="background:#ebfbee;color:#2f9e44"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 7V3.5L19.5 9H14z"/></svg></span>
+          <span class="tool-name">PDF to Excel</span>
+          <span class="tool-desc">Convert PDF data to XLS.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Edit -->
+    <div class="tool-block">
+      <h2 class="block-title">Edit PDF</h2>
+      <div class="tool-grid">
+        <button class="tool-card" data-tool="pagenumbers">
+          <span class="tool-icon" style="background:#f3f0ff;color:#6741d9"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm2 9v2h4v2H7v-2l4-2v-2H7v2zm10-5h-4v2h2v6h2V8z"/></svg></span>
+          <span class="tool-name">Page Numbers</span>
+          <span class="tool-desc">Insert page numbers into PDF.</span>
+        </button>
+        <button class="tool-card" data-tool="watermark">
+          <span class="tool-icon" style="background:#fff9db;color:#f08c00"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16.5 6.5 19.2l1-6L3 8.9 9 8l3-6z"/></svg></span>
+          <span class="tool-name">Watermark</span>
+          <span class="tool-desc">Stamp an image or text over PDF.</span>
+        </button>
+        <button class="tool-card" data-tool="edit">
+          <span class="tool-icon" style="background:#e3faf3;color:#0ca678"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M3 17.25V21h3.75L17.8 9.94l-3.75-3.75L3 17.25zM20.7 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></span>
+          <span class="tool-name">Edit PDF</span>
+          <span class="tool-desc">Add text, shapes, images & annotations.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Security -->
+    <div class="tool-block">
+      <h2 class="block-title">PDF security</h2>
+      <div class="tool-grid">
+        <button class="tool-card" data-tool="unlock">
+          <span class="tool-icon" style="background:#fff4d6;color:#f59f00"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2H9V6a3 3 0 0 1 6 0v2h2V6a5 5 0 0 0-5-5z"/></svg></span>
+          <span class="tool-name">Unlock PDF</span>
+          <span class="tool-desc">Remove PDF password security.</span>
+        </button>
+        <button class="tool-card" data-tool="protect">
+          <span class="tool-icon" style="background:#e7f5ff;color:#1971c2"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm3 8H9V6a3 3 0 0 1 6 0v3z"/></svg></span>
+          <span class="tool-name">Protect PDF</span>
+          <span class="tool-desc">Protect PDF files with a password.</span>
+        </button>
+        <button class="tool-card" data-tool="sign">
+          <span class="tool-icon" style="background:#f3f0ff;color:#7048e8"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M3 17.5L12 8.5l3 3-9 9H3v-3zM20.7 7.3l-3-3 1.4-1.4a2 2 0 0 1 2.8 0l.2.2a2 2 0 0 1 0 2.8L20.7 7.3z"/></svg></span>
+          <span class="tool-name">PDF Sign</span>
+          <span class="tool-desc">Sign PDF or request signatures.</span>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ============ FEATURES STRIP ============ -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Fast &amp; easy</h3>
+        <p>Using our tools means your files are processed in the blink of an eye.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Secure</h3>
+        <p>Your files are safe. We delete them after a few hours.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💻</div>
+        <h3>All platforms</h3>
+        <p>Works on Windows, Mac, Linux, iOS &amp; Android. No installation.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">❤️</div>
+        <h3>Loved by millions</h3>
+        <p>Millions of people use our tools every month to work with PDFs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="container">
+      <h2>Get the most out of iLovePDF</h2>
+      <p>Unlock all the premium features with iLovePDF Premium.</p>
+      <a href="#" class="btn btn-primary btn-lg">Get Premium</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="#" class="logo logo-footer">
+          <span class="logo-icon">PDF</span>
+          <span class="logo-text">iLove<span class="logo-red">PDF</span></span>
+        </a>
+        <p class="footer-tag">Online PDF tools for PDF lovers. Free, easy and online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#organize">Merge PDF</a></li>
+          <li><a href="#tools">All tools</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">API</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <div class="social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> iLovePDF clone — demo project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ TOOL MODAL ============ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-head">
+        <span class="modal-icon" id="modalIcon"></span>
+        <h2 id="modalTitle">Tool</h2>
+      </div>
+      <p class="modal-sub" id="modalSub"></p>
+
+      <div id="toolOptions" class="tool-options"></div>
+
+      <div class="dropzone" id="dropzone">
+        <input type="file" id="fileInput" multiple hidden />
+        <div class="dropzone-inner">
+          <svg viewBox="0 0 24 24" width="56" height="56"><path fill="#e5322d" d="M19 9.5V4a1 1 0 0 0-1-1h-4a3 3 0 0 0-6 0H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h7v-2H5V5h2v2h8V5h2v4.5h2zM9 3.5a1.5 1.5 0 1 1 3 0V5H9V3.5z"/></svg>
+          <p class="dz-title">Drop files here or <span class="dz-link">click to upload</span></p>
+          <p class="dz-hint" id="dzHint">Select PDF files</p>
+        </div>
+      </div>
+
+      <div class="file-list" id="fileList"></div>
+
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="processBtn" disabled>Process</button>
+      </div>
+
+      <div class="result-area" id="resultArea" hidden>
+        <div class="result-card">
+          <span class="result-emoji">✅</span>
+          <div>
+            <p class="result-title" id="resultTitle">Done!</p>
+            <p class="result-meta" id="resultMeta"></p>
+          </div>
+          <button class="btn btn-success" id="downloadBtn">Download</button>
+        </div>
+      </div>
+
+      <div class="loader" id="loader" hidden>
+        <div class="spinner"></div>
+        <p id="loaderText">Working on it…</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Libraries for real PDF processing -->
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+  <script>if (window.pdfjsLib) { pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js'; }</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
