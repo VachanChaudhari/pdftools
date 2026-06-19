@@ -206,6 +206,13 @@ processBtn.addEventListener('click', runTool);
 
 async function runTool() {
   if (selectedFiles.length === 0) return;
+  // Friendly guard: make sure the processing libraries loaded
+  if (!window.PDFLib) {
+    loader.hidden = false;
+    loaderText.textContent = '⚠️ pdf-lib failed to load. Check that js/lib/ was uploaded.';
+    setTimeout(() => { loader.hidden = true; }, 4000);
+    return;
+  }
   processBtn.disabled = true;
   loader.hidden = false;
   resultArea.hidden = true;
